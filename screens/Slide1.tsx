@@ -28,7 +28,7 @@ export default function Slide1() {
         <View style={style.dot} />
         <View style={style.dot} />
       </View>
-      
+      /**asdw */
       <View style={{marginTop: 30}}>
         <TouchableOpacity onPress={() => navigate.navigate("Slide2")} style={style.buttonContainer}>
             <Text style={style.next}>
