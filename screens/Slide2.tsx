@@ -13,15 +13,15 @@ export default function Slide2() {
     <View style={style.mainContainer}>
       <View style={style.imgContainer}>
         <Image
-          source={{ uri: 'https://timeandtidewatches.com/wp-content/uploads/2020/11/vintage-gold-daytona-6263.jpg' }}
+          source={require('../assets/images/secondpic.jpg')}
           style={style.image}
           resizeMode="cover"
         />
        
       </View>
       <View style={style.textContainer}>
-        <Text style={style.textDesign}>Shop with Confidence </Text>
-        <Text style={style.textDesign2}>Authenticity guaranteed, luxury assured.</Text>
+        <Text style={style.textDesign}>Beyond Ordinary</Text>
+        <Text style={style.textDesign2}>Limited collections. Timeless designs. Street fashion that defines the future.</Text>
       </View>
 
       <View style={style.dotsContainer}>

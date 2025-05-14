@@ -1,4 +1,4 @@
-import {StyleSheet, Text, TouchableOpacity, View,Image} from 'react-native'
+import {StyleSheet, Text, TouchableOpacity, View, Image} from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
 import style from '../styles/main';
@@ -13,21 +13,20 @@ export default function Slide1() {
     <View style={style.mainContainer}>
       <View style={style.imgContainer}>
         <Image
-          source={{ uri: 'https://www.watchpro.com/cloud/2024/11/14/Ya1A9BQ0-ai-generated-9096220_1920-1200x675.jpg' }}
+          source={require('../assets/images/firstpic.jpg')}
           style={style.image}
           resizeMode="cover" 
         />
       </View>
       <View style={style.textContainer}>
-        <Text style={style.textDesign}>Discover Precision</Text>
-        <Text style={style.textDesign2}>Curated timepieces from the world's finest watchmakers.</Text>
+        <Text style={style.textDesign}>Unleash Your Style</Text>
+        <Text style={style.textDesign2}>Premium streetwear crafted for the bold and fearless.</Text>
       </View>
 
       <View style={style.dotsContainer}>
         <View style={[style.dot, style.activeDot]} />
         <View style={style.dot} />
         <View style={style.dot} />
-       
       </View>
       
       <View style={{marginTop: 30}}>

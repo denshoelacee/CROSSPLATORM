@@ -16,15 +16,15 @@ export default function Slide3() {
     <View style={style.mainContainer}>
       <View style={style.imgContainer}>
       <Image
-          source={{ uri: 'https://revolutionwatch.com/wp-content/uploads/2022/03/29-jacob-arabo-mobile-image.jpg' }}
+          source={require('../assets/images/thirdpic.jpg')}
           style={style.image}
           resizeMode="cover"
         />
      
       </View>
       <View style={style.textContainer}>
-        <Text style={style.textDesign}>Own Your Moment</Text>
-        <Text style={style.textDesign2}> Find the perfect watch to tell your story.</Text>
+        <Text style={style.textDesign}>Carry the Essentials</Text>
+        <Text style={style.textDesign2}>From durable bottles to everyday accessories — gear up with style and purpose.</Text>
       </View>
 
       <View style={style.dotsContainer}>

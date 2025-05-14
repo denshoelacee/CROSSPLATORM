@@ -13,8 +13,8 @@ import CustomHeader from '../components/CustomHeader'
 import { useRoute } from '@react-navigation/native'
 import Profile from '../screens/guard/Profile';
 import Settings from '../screens/guard/Settings'
-import {AntDesign,Feather,Entypo} from '@expo/vector-icons';
-
+import {AntDesign,Ionicons,Entypo, MaterialCommunityIcons} from '@expo/vector-icons';
+import { customStyle } from '../styles/customStyle'
 
 
 function customTabs() {
@@ -22,15 +22,24 @@ function customTabs() {
 
   const screenTabBarOptions = ({ route }: any) => ({
     header: () => <CustomHeader />,
-    tabBarIcon: ({color }: any) => {
+    tabBarIcon: ({focused, color }: any) => {
       if (route.name === 'Home') {
-        return <Entypo name="home" size={24} color={color} />;
+        if(focused) {
+          return <MaterialCommunityIcons name="home" size={24} color={color} />;
+        }
+          return <MaterialCommunityIcons name="home-outline" size={24} color={color} />;
       } else if (route.name === 'Menu') {
         return <Entypo name="menu" size={24} color={color} />;
-      }else if (route.name === 'Profile'){
-        return <AntDesign name="user" size={24} color={color} />
+      } else if (route.name === 'Profile') {
+        if(focused) {
+        return <Ionicons name="person" size={23} color={color} />
+        }
+        return <Ionicons name="person-outline" size={23} color={color} />
       }else if (route.name === 'View Orders'){
-        return <AntDesign name="shoppingcart" size={24} color={color}/>
+        if(focused) {
+          return <Ionicons name="cart" size={24} color={color} />;
+        }
+        return <Ionicons name="cart-outline" size={24} color={color} />;
       }
       return null;
     },

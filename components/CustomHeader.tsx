@@ -15,7 +15,7 @@ export default function CustomHeader() {
           <TouchableOpacity>
             <Ionicons name='menu' 
             size={20} 
-            color="black" 
+            color={customStyle.secondaryColor} 
             style={style.menuIconStyling}/>
           </TouchableOpacity>                        
           <View>
@@ -23,9 +23,9 @@ export default function CustomHeader() {
               Deliver To
             </Text> */}
             <TouchableOpacity style={{flexDirection:'row'}}>
-              <Text style={{color: customStyle.buttonColor,fontFamily:customStyle.PoppinsBold,
-                letterSpacing: 3,fontSize:16
-              }}>PRIME HOUR</Text>
+              <Text style={{color: customStyle.primaryColor,fontFamily:customStyle.PoppinsBold,
+                letterSpacing: 1,fontSize:14, fontStyle: 'italic', fontWeight: 'bold'
+              }}>UNDERGROUND APPAREL</Text>
               {/*
               <View style={style.careticonContainer}>
                   <AntDesign name="caretdown" 
@@ -41,13 +41,13 @@ export default function CustomHeader() {
               <Feather
               name='shopping-bag'
               size={20}
-              color="black"
+              color= {customStyle.secondaryColor}
               />
             </TouchableOpacity>
           </View>
       </View>
       <View>
-        <Text style={{paddingVertical: 20,color:customStyle.buttonColor}}>Hey Oscar,
+        <Text style={{paddingVertical: 20,color:customStyle.primaryColor}}>Hey Ungart!
           <Text style={{fontWeight:"bold"}}> Good Afternoon!</Text>
         </Text>
       </View>

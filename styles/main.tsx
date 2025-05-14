@@ -17,18 +17,18 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
       },
-      image: {
+  image: {
         flex: 1,
         width: '100%',
         height: '100%',
         borderRadius: 8,
       },
       imgContainer :{
-        marginTop:130,
+        marginTop:85,
         justifyContent: 'center',
         alignItems: 'center',
         width: 350,
-        height:250,       
+        height:300,       
         
       },
       textContainer :{
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
       //START OF HEADER HOME CONTAINER
       homeContainer :{
         height: 150,
-        backgroundColor: customStyle.primaryColor,
+        backgroundColor: 'white'
       },
       headerContainer :{
         paddingHorizontal: 30,
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
       menuIconStyling:{
         borderRadius: 20, 
         padding: 10, 
-        backgroundColor: customStyle.buttonColor
+        backgroundColor: 'black'
       },
       deliveryText:{
         fontFamily: customStyle.PoppinsRegular,
@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
       shoppingBagContainer:{
         borderRadius: 20, 
         padding: 10, 
-        backgroundColor: customStyle.buttonColor
+        backgroundColor: 'black'
       }
       //END OF HEADER HOME CONTAINER
 
